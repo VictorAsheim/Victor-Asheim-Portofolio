@@ -8,6 +8,7 @@ class CardScroller {
         this.scrollTimeout = null;
         
         this.init();
+        this.initScrollAnimations();
     }
     
     init() {
@@ -168,6 +169,11 @@ class CardScroller {
         // Start animasjoner
         this.animateSection(targetSection);
         
+        // Trigger hero-animasjoner hvis vi går til hero-seksjonen
+        if (index === 0) {
+            this.triggerHeroAnimations();
+        }
+        
         // Reset scroll-flag
         setTimeout(() => {
             this.isScrolling = false;
@@ -193,6 +199,29 @@ class CardScroller {
         this.dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === this.currentSection);
         });
+    }
+
+    initScrollAnimations() {
+        this.heroElements = document.querySelectorAll('.hero-icon, .hero-title, .hero-description, .hero-buttons, .hero-image');
+        
+        // Trigger animasjoner når hero-seksjonen blir aktiv
+        this.triggerHeroAnimations();
+    }
+
+    triggerHeroAnimations() {
+        // Reset alle animasjoner
+        this.heroElements.forEach(element => {
+            element.classList.remove('scroll-animate');
+        });
+
+        // Trigger animasjoner med delay
+        setTimeout(() => {
+            this.heroElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.classList.add('scroll-animate');
+                }, index * 200); // 200ms delay mellom hvert element
+            });
+        }, 300); // Start etter 300ms
     }
     
     animateSection(section) {
