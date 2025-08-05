@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Wergeland Asheim  Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigasjon -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Legge til logo istede? Linkes opp til hjem -->
+            <div class="nav-logo">
+                <a href="#home">Victor Asheim</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <!-- Hamburger meny, må linkes opp -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Prikker for scroll -->
+    <div class="section-dots">
+        <div class="dot active" data-section="home"></div>
+        <div class="dot" data-section="about"></div>
+        <div class="dot" data-section="projects"></div>
+        <div class="dot" data-section="contact"></div>
+    </div>
+
+    <section id="home" class="hero active">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <div class="name-line">
+                    <span class="title-line">VICTOR</span>
+                    <span class="title-line">ASHEIM</span>
+                </div>
+            </h1>
+            <p class="hero-subtitle">
+                Cybersecurity / Web Design
+            </p>
+            <!-- OM meg knapp, fylle mer? legge til logo -->
+            <div class="hero-tag">Om Meg</div>
+        </div>
+        
+        <!-- liten animasjo -->
+        <div class="background-elements">
+            <div class="element cloud" data-speed="0.5"></div>
+            <div class="element cloud" data-speed="0.3"></div>
+            <div class="element cloud" data-speed="0.7"></div>
+            <div class="element moon" data-speed="0.2"></div>
+            <div class="element cloud" data-speed="0.4"></div>
+            <div class="element cloud" data-speed="0.6"></div>
+        </div>
+    </section>
+
+    <!-- Mine prosjekter -->
+    <section id="projects" class="projects next">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-number">01</div>
+            </div>
+            <!-- Grid -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <!-- legge til bilde -->
+                    <div class="project-image">
+                        <div class="project-placeholder"></div>
+                    </div>
+                    <!-- Informasjon -->
+                    <div class="project-info">
+                        <h3 class="project-title">Restaurant Website Design</h3>
+                        <p class="project-category">web development</p>
+                        <p class="project-description">Bachelorprosjekt: Designet og utviklet en moderne nettside for en restaurant med fokus på brukeropplevelse og responsivt design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om meg-seksjon legge til ferdigheter her -->
+    <section id="about" class="about next">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-number">02</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>HVA SKAL JEG SKRIVE HER.</p>
+                    <p>Nyutdannet i cybersecuirty og engasjert i å komme meg ut i et jobbmiljø jeg kan bli bedre i det jeg kan, og lære meg nye ting.</p>
+                </div>
+                <!-- Liste over ferdigerer -->
+                <div class="about-skills">
+                    <h3>Ferdigheter lært på skolen</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Network Security</div>
+                        <div class="skill-item">Penetration Testing</div>
+                        <div class="skill-item">Incident Response</div>
+                        <div class="skill-item">Security Analysis</div>
+                        <div class="skill-item">Risk Assessment</div>
+                        <div class="skill-item">Compliance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt meg -->
+    <section id="contact" class="contact next">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-number">03</div>
+            </div>
+            <!-- Kontaktinformasjon -->
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn:</span>
+                        <a href="#" class="contact-link">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub:</span>
+                        <a href="#" class="contact-link">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll-indikator-->
+    <div class="scroll-indicator">
+        <div class="scroll-text">Prosjekter</div>
+        <div class="scroll-line"></div>
+    </div>
+
+    <!-- Om meg popup vindu -->
+    <div id="about-modal" class="about-modal">
+        <div class="about-modal-content">
+            <div class="about-contact">
+                <!-- Venstre side -->
+                <div id="contact-half" class="half-contact is-contact">
+                    <div class="giga-text">Om</div>
+                    <div class="contact-info">
+                        <h3 class="h4 about-me-title">Om Meg</h3>
+                        <h4 class="h5 about-me-subtitle">Cybersecurity Graduate & Web Developer</h4>
+                        <p class="about-me-text">Jeg heter Victor Asheim, og er en en nyutdannet <strong>Cybersecurity student</strong> som søker etter jobb. Jeg har alltid vært interessert i alt digitalt og hvordan holde det beskyttet.
+                           <br>Jeg har erfaring fra skolen innen <strong>nettverkssikkerhet</strong>, <strong>penetration testing</strong> og <strong>web development</strong>.<br>Jeg ble nettopp ferdig med bachelor i Cybersecurity fra Høyskolen Kristiania.</p>
+                        <!-- main focus -->
+                        <ul class="about-me-list">
+                            <li class="cybersecurity">
+                                <div class="about-me-list-label">Cybersecurity</div>
+                            </li>
+                            <li class="webdev">
+                                <div class="about-me-list-label">Web Development</div>
+                            </li>
+                            <li class="networking">
+                                <div class="about-me-list-label">Network Security</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Høyre side -->
+                <div class="half-contact is-about">
+                    <div class="giga-text">Meg</div>
+                    <div class="close-contact">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="contact-info">
+                        <h3 class="h4 form-title">Kontakt meg</h3>
+                        <p class="form-subtitle">Du kan kontakte meg her:</p>
+                        <!-- lenker -->
+                        <div class="contact-links">
+                            <div class="contact-link-item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:asheim.victor@gmail.com" class="contact-link">asheim.victor@gmail.com</a>
+                            </div>
+                            <div class="contact-link-item">
+                                <span class="contact-label">GitHub:</span>
+                                <a href="https://github.com/VictorAsheim" target="_blank" class="contact-link">@VictorAsheim</a>
+                            </div>
+                            <div class="contact-link-item">
+                                <span class="contact-label">LinkedIn:</span>
+                                <a href="https://www.linkedin.com/in/victor-wergeland-asheim-5b3a20169/" target="_blank" class="contact-link">Victor Wergeland Asheim</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
