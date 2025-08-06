@@ -2,6 +2,8 @@
 Hei, og velkommen til min porteføljeside!
 Dette er mitt personlige nettsted hvor jeg presenterer prosjekter, ferdigheter og erfaringer innen cybersikkerhet og teknologi.
 
+All kode ligger i dev da jeg ikke er ferdig.
+
 🌐 Om Nettsiden
 Denne porteføljen er bygget for å gi en oversikt over hvem jeg er, hva jeg kan, og hva jeg har jobbet med så langt i studiet og på fritiden. Jeg vil holde denne oppdatert med både verktøy jeg lager, og nye ferdigheter for å forbedre nettsiden.
 
